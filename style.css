@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(#1e1e2e, #1B2232);
+    font-family: sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+img {
+    max-width: 80%;
+    background: #1f1c30af;
+}
+
+h1, h2, h3, h4, p, ol, li {
+    color: white;
+}
+
+.todo {
+    color: black;
+    background: orange;
+    padding: 0.25em;
+    margin: 0.25em;
+}
+
+.done {
+    color: white;
+    background: green;
+    padding: 0.25em;
+    margin: 0.25em;
+}
+
+blockquote {
+    font-style: italic;
+    font-family: serif;
+}
+
+a:link {
+    color: #ff1a8c;
+}
+
+a:visited {
+    color: #800040;
+}
