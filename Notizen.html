@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-06-29 Sat 16:14 -->
+<!-- 2024-06-29 Sat 16:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>BikeComputer</title>
@@ -50,56 +50,56 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org903c73e">1. Schaltplan und PCB</a>
+<li><a href="#orgfe97c51">1. Schaltplan und PCB</a>
 <ul>
-<li><a href="#org69629c3">1.1. KiCAD-Setup</a></li>
-<li><a href="#orgd8e6b52">1.2. Spannungsversorgung</a>
+<li><a href="#org97c838a">1.1. KiCAD-Setup</a></li>
+<li><a href="#orgfee4b0e">1.2. Spannungsversorgung</a>
 <ul>
-<li><a href="#org67e08ec">1.2.1. Eingehende Spannung / Strom und Fahrrad-Beleuchtung</a></li>
-<li><a href="#org953567b">1.2.2. Schutz und Umwandlung zu Gleichstrom</a></li>
-<li><a href="#org58a2203">1.2.3. <span class="todo TODO">TODO</span> 1. Spannungsregler</a></li>
-<li><a href="#org9983b6f">1.2.4. Kondensator</a></li>
-<li><a href="#orgddd272f">1.2.5. Messung Kondensator / VBUS</a></li>
-<li><a href="#org899e6c7">1.2.6. C9</a></li>
-<li><a href="#org6eaa590">1.2.7. 2. Spannungsregler</a></li>
+<li><a href="#orgef304dd">1.2.1. Eingehende Spannung / Strom und Fahrrad-Beleuchtung</a></li>
+<li><a href="#org6ebc4c0">1.2.2. Schutz und Umwandlung zu Gleichstrom</a></li>
+<li><a href="#orgf945595">1.2.3. <span class="todo TODO">TODO</span> 1. Spannungsregler</a></li>
+<li><a href="#orge6775e4">1.2.4. Kondensator</a></li>
+<li><a href="#org5536e08">1.2.5. Messung Kondensator / VBUS</a></li>
+<li><a href="#org3ffb800">1.2.6. C9</a></li>
+<li><a href="#org0598b4d">1.2.7. 2. Spannungsregler</a></li>
 </ul>
 </li>
-<li><a href="#org5b0fb93">1.3. Debug-Messungen</a></li>
-<li><a href="#org51e8a8c">1.4. Taster</a></li>
-<li><a href="#org0f9f73d">1.5. Messung der Geschwindigkeit</a>
+<li><a href="#org7bbbeb0">1.3. Debug-Messungen</a></li>
+<li><a href="#org9424821">1.4. Taster</a></li>
+<li><a href="#orgca2a997">1.5. Messung der Geschwindigkeit</a>
 <ul>
-<li><a href="#org402396b">1.5.1. Erwartete Frequenzen</a></li>
-<li><a href="#org2e24ad2">1.5.2. Methoden</a></li>
-<li><a href="#org5e3221d">1.5.3. Vorgehen</a></li>
+<li><a href="#org06b6f17">1.5.1. Erwartete Frequenzen</a></li>
+<li><a href="#org7f7e86f">1.5.2. Methoden</a></li>
+<li><a href="#org0487067">1.5.3. Vorgehen</a></li>
 </ul>
 </li>
-<li><a href="#org628c537">1.6. Display</a>
+<li><a href="#org18e7b1d">1.6. Display</a>
 <ul>
-<li><a href="#org5b70e2e">1.6.1. <span class="done DONE">DONE</span> Nokia 3310/5110 Display</a></li>
-<li><a href="#org0402779">1.6.2. <span class="done DONE">DONE</span> DisplayVisions DOGM240-6</a></li>
-<li><a href="#org9eb6f5f">1.6.3. <span class="todo TODO">TODO</span> DisplayVisions DOGM128W-6</a></li>
+<li><a href="#org1304cd5">1.6.1. <span class="done DONE">DONE</span> Nokia 3310/5110 Display</a></li>
+<li><a href="#orgae6468f">1.6.2. <span class="done DONE">DONE</span> DisplayVisions DOGM240-6</a></li>
+<li><a href="#org3487c32">1.6.3. <span class="todo TODO">TODO</span> DisplayVisions DOGM128W-6</a></li>
 </ul>
 </li>
-<li><a href="#org829b135">1.7. Controller</a>
+<li><a href="#orgd88a6de">1.7. Controller</a>
 <ul>
-<li><a href="#org2731156">1.7.1. Programmierung</a></li>
+<li><a href="#org6270a48">1.7.1. Programmierung</a></li>
 </ul>
 </li>
-<li><a href="#orge29ae79">1.8. Testpunkte und Pins</a>
+<li><a href="#org1a8ff40">1.8. Testpunkte und Pins</a>
 <ul>
-<li><a href="#org5517a3c">1.8.1. 3.3V</a></li>
-<li><a href="#org5119227">1.8.2. 5V</a></li>
-<li><a href="#orgb84a6df">1.8.3. GND</a></li>
-<li><a href="#orga79f1d6">1.8.4. Eingangsspannung</a></li>
-<li><a href="#org95bf9c7">1.8.5. Spannung des Kondensators</a></li>
-<li><a href="#org44355a2">1.8.6. Spannung nach Gleichrichter</a></li>
+<li><a href="#org5779a21">1.8.1. 3.3V</a></li>
+<li><a href="#org036eb03">1.8.2. 5V</a></li>
+<li><a href="#orged7bbab">1.8.3. GND</a></li>
+<li><a href="#org1067f7f">1.8.4. Eingangsspannung</a></li>
+<li><a href="#orgf16ad51">1.8.5. Spannung des Kondensators</a></li>
+<li><a href="#org297d012">1.8.6. Spannung nach Gleichrichter</a></li>
 </ul>
 </li>
-<li><a href="#orge265638">1.9. Gehäuse</a></li>
-<li><a href="#orgdd23417">1.10. Platine</a>
+<li><a href="#org8318f0d">1.9. Gehäuse</a></li>
+<li><a href="#org713c0d5">1.10. Platine</a>
 <ul>
-<li><a href="#org731da48">1.10.1. Design</a></li>
-<li><a href="#org7647905">1.10.2. Hersteller</a></li>
+<li><a href="#orgfc44180">1.10.1. Design</a></li>
+<li><a href="#org30881dd">1.10.2. Hersteller</a></li>
 </ul>
 </li>
 </ul>
@@ -107,12 +107,12 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org903c73e" class="outline-2">
-<h2 id="org903c73e"><span class="section-number-2">1.</span> Schaltplan und PCB</h2>
+<div id="outline-container-orgfe97c51" class="outline-2">
+<h2 id="orgfe97c51"><span class="section-number-2">1.</span> Schaltplan und PCB</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org69629c3" class="outline-3">
-<h3 id="org69629c3"><span class="section-number-3">1.1.</span> KiCAD-Setup</h3>
+<div id="outline-container-org97c838a" class="outline-3">
+<h3 id="org97c838a"><span class="section-number-3">1.1.</span> KiCAD-Setup</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Ich nutze die <i>Alternate Kicad Library</i> und die <i>KiCad Library for Arduino Modules</i> für einige Schaltsymbole.
@@ -121,18 +121,18 @@ Beide Libraries sind über den <i>Plugin and Content Manager</i> im normalen KiC
 </div>
 </div>
 
-<div id="outline-container-orgd8e6b52" class="outline-3">
-<h3 id="orgd8e6b52"><span class="section-number-3">1.2.</span> Spannungsversorgung</h3>
+<div id="outline-container-orgfee4b0e" class="outline-3">
+<h3 id="orgfee4b0e"><span class="section-number-3">1.2.</span> Spannungsversorgung</h3>
 <div class="outline-text-3" id="text-1-2">
 
-<div id="org026986d" class="figure">
+<div id="orgc1aff7f" class="figure">
 <p><img src="./assets/Spannungsversorgung1.png" alt="Spannungsversorgung1.png" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Spannungsversorgung 1</p>
 </div>
 </div>
-<div id="outline-container-org67e08ec" class="outline-4">
-<h4 id="org67e08ec"><span class="section-number-4">1.2.1.</span> Eingehende Spannung / Strom und Fahrrad-Beleuchtung</h4>
+<div id="outline-container-orgef304dd" class="outline-4">
+<h4 id="orgef304dd"><span class="section-number-4">1.2.1.</span> Eingehende Spannung / Strom und Fahrrad-Beleuchtung</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <p>
 Der Fahrradcomputer wird parallel zur normalen Beleuchtung geschalten.
@@ -148,7 +148,7 @@ Idealerweise könnte ich den Widerstand des gesamten Computers etwa berechnen, u
 </p>
 
 
-<div id="org2b29619" class="figure">
+<div id="orge60dd69" class="figure">
 <p><img src="./assets/Spannungen.png" alt="Spannungen.png" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Spannungen am Fahrraddynamo (vorne, hinten, Computer)</p>
@@ -160,7 +160,7 @@ Fällt die Beleuchtung auch aus, wenn ich sie abschalte? Vermutlich schon… Als
 </p>
 
 
-<div id="orgbf0eade" class="figure">
+<div id="org01fff9e" class="figure">
 <p><img src="./assets/Überspannung_Test.png" alt="Überspannung_Test.png" />
 </p>
 <p><span class="figure-number">Figure 3: </span>Überspannung beim Ausfall der Lampen</p>
@@ -172,12 +172,12 @@ Ab einem Widerstand von \(60\Omega\) laufen durch den Fahrradcomputer weniger al
 </div>
 </div>
 
-<div id="outline-container-org953567b" class="outline-4">
-<h4 id="org953567b"><span class="section-number-4">1.2.2.</span> Schutz und Umwandlung zu Gleichstrom</h4>
+<div id="outline-container-org6ebc4c0" class="outline-4">
+<h4 id="org6ebc4c0"><span class="section-number-4">1.2.2.</span> Schutz und Umwandlung zu Gleichstrom</h4>
 <div class="outline-text-4" id="text-1-2-2">
 </div>
 <ol class="org-ol">
-<li><a id="org1f60105"></a><span class="done DONE">DONE</span> Kapazitive Kompensation<br />
+<li><a id="org5346198"></a><span class="done DONE">DONE</span> Kapazitive Kompensation<br />
 <div class="outline-text-5" id="text-1-2-2-1">
 <p>
 Ich hatte mal darüber nachgedacht, wie bspw. der Forumslader verschiedene Kondensatoren in Reihe mit dem Dynamo zu schalten, um mehr Leistung zu erhalten.
@@ -186,7 +186,7 @@ Da aber mein Frontlicht das vermutlich auch tut, kriege ich evtl. damit Probleme
 </div>
 </li>
 
-<li><a id="orgbfd0146"></a><span class="todo TODO">TODO</span> TVS-Diode<br />
+<li><a id="org21768ae"></a><span class="todo TODO">TODO</span> TVS-Diode<br />
 <div class="outline-text-5" id="text-1-2-2-2">
 <ul class="org-ul">
 <li><a href="https://www.tme.eu/Document/0b6222bec7e12d83185b51d73cb6a54d/SMBJ_ser.pdf">Datenblatt</a></li>
@@ -217,7 +217,7 @@ Leider kann man weder bei Digikey noch bei Mouser nach der maximalen Dauerleistu
 </div>
 </li>
 
-<li><a id="orga0d5b13"></a>Zenerdioden<br />
+<li><a id="org7ae78e4"></a>Zenerdioden<br />
 <div class="outline-text-5" id="text-1-2-2-3">
 <ul class="org-ul">
 <li><a href="https://www.mccsemi.com/pdf/Products/SMBJ5338B-SMBJ5388B(SMB).pdf">Datenblatt</a></li>
@@ -244,7 +244,7 @@ Allerdings kann ich diesen Widerstand ziemlich klein setzen, sodass hier evtl. d
 </div>
 </li>
 
-<li><a id="org7dd59df"></a>Brücken-Gleichrichter (Schottky-Dioden)<br />
+<li><a id="org94f5237"></a>Brücken-Gleichrichter (Schottky-Dioden)<br />
 <div class="outline-text-5" id="text-1-2-2-4">
 <p>
 Hier haben wir einen Full Bridge Rectifier.
@@ -259,7 +259,7 @@ Dioden mit geringerem Spannungsabfall wären auch schön, da ich immer die Verlu
 </p>
 
 
-<div id="orgc216a79" class="figure">
+<div id="orgb7078a6" class="figure">
 <p><img src="./assets/NSR0170HT1G_Spannungsabfall.png" alt="NSR0170HT1G_Spannungsabfall.png" />
 </p>
 <p><span class="figure-number">Figure 4: </span>Spannungsabfall NSR0170HT1G (\(100\mathrm{mA}\): \(\approx1.2\mathrm V\))</p>
@@ -269,7 +269,7 @@ Dioden mit geringerem Spannungsabfall wären auch schön, da ich immer die Verlu
 NRVB120VLSFT1G ist z.B. cool (sehr niedriger Spannungsabfall?) kostet aber auch 41ct vs 21ct (ohme MwSt).
 </p>
 
-<div id="orgdf951e1" class="figure">
+<div id="org3cb01ee" class="figure">
 <p><img src="./assets/NRVB120VLSFT1G_Spannungsabfall.png" alt="NRVB120VLSFT1G_Spannungsabfall.png" />
 </p>
 <p><span class="figure-number">Figure 5: </span>Spannungsabfall NRVB120VLSFT1G (\(100\mathrm{mA}\): \(0.275\mathrm V\))</p>
@@ -309,11 +309,11 @@ Auch schön, dass die Suche nach "low voltage active voltage rectifier" vor alle
 </ol>
 </div>
 
-<div id="outline-container-org58a2203" class="outline-4">
-<h4 id="org58a2203"><span class="section-number-4">1.2.3.</span> <span class="todo TODO">TODO</span> 1. Spannungsregler</h4>
+<div id="outline-container-orgf945595" class="outline-4">
+<h4 id="orgf945595"><span class="section-number-4">1.2.3.</span> <span class="todo TODO">TODO</span> 1. Spannungsregler</h4>
 <div class="outline-text-4" id="text-1-2-3">
 
-<div id="org518246c" class="figure">
+<div id="org32300ba" class="figure">
 <p><img src="./assets/Spannungsregler1.png" alt="Spannungsregler1.png" />
 </p>
 <p><span class="figure-number">Figure 6: </span>1. Spannungsregler</p>
@@ -362,11 +362,11 @@ Hier könnte ich also höchstens nach weniger Stromverbrauch und weniger Leckstr
 </div>
 </div>
 
-<div id="outline-container-org9983b6f" class="outline-4">
-<h4 id="org9983b6f"><span class="section-number-4">1.2.4.</span> Kondensator</h4>
+<div id="outline-container-orge6775e4" class="outline-4">
+<h4 id="orge6775e4"><span class="section-number-4">1.2.4.</span> Kondensator</h4>
 <div class="outline-text-4" id="text-1-2-4">
 
-<div id="org3d4635e" class="figure">
+<div id="org298c22c" class="figure">
 <p><img src="./assets/Kondensator.png" alt="Kondensator.png" />
 </p>
 <p><span class="figure-number">Figure 7: </span>Kondensator</p>
@@ -406,18 +406,18 @@ Der Kondensator kann mit einer zweiten Leitung umgangen werden, wenn der Dynamo 
 </div>
 
 <ol class="org-ol">
-<li><a id="orgf5c021c"></a>Widerstände<br />
+<li><a id="orgdb8ec3f"></a>Widerstände<br />
 <div class="outline-text-5" id="text-1-2-4-1">
 <p>
 Die Widerstände sind theoretisch nötig um den Strom, mit dem der Kondensator geladen wird, zu begrenzen.
 Die hier gegebenen \(50\Omega\) führen bei \(5.3\mathrm V\) zu \(106\mathrm{mA}\).
-Der Kondensator darf mit max. \(70\mathrm{mA}\) geladen werden.
+Der Kondensator darf mit max. \(700\mathrm{mA}\) geladen werden.
 Passt also.
 </p>
 </div>
 </li>
 
-<li><a id="orgd21685d"></a>Dioden<br />
+<li><a id="orgae9427d"></a>Dioden<br />
 <div class="outline-text-5" id="text-1-2-4-2">
 <p>
 Die Dioden sorgen dafür, dass der Kondensator nicht "nach hinten" sich bspw. durch R13 und R14 entlädt (D10, D11) und dass die Messung vom Kondensator auch nur diesen misst?
@@ -427,18 +427,18 @@ Die Dioden sorgen dafür, dass der Kondensator nicht "nach hinten" sich bspw. du
 </ol>
 </div>
 
-<div id="outline-container-orgddd272f" class="outline-4">
-<h4 id="orgddd272f"><span class="section-number-4">1.2.5.</span> Messung Kondensator / VBUS</h4>
+<div id="outline-container-org5536e08" class="outline-4">
+<h4 id="org5536e08"><span class="section-number-4">1.2.5.</span> Messung Kondensator / VBUS</h4>
 <div class="outline-text-4" id="text-1-2-5">
 
-<div id="org8db98e5" class="figure">
+<div id="org5638e4f" class="figure">
 <p><img src="./assets/Messung.png" alt="Messung.png" />
 </p>
 <p><span class="figure-number">Figure 8: </span>Messung Kondensator / VBUS</p>
 </div>
 </div>
 <ol class="org-ol">
-<li><a id="orga21a023"></a>MOSFETs<br />
+<li><a id="orgeba90cb"></a>MOSFETs<br />
 <div class="outline-text-5" id="text-1-2-5-1">
 <p>
 Im originalen Design werden zwei MOSFETs verwendet, um jeweils eine Leitung zu schalten, mit der die Spannung des Kondensators und die Spannung der 1. Spannungsstufe gemessen werden kann.
@@ -460,7 +460,7 @@ Die MOSFETs sind grundlegend überhaupt nötig, da später mit einem Spannungste
 Wofür sind eigentlich die Kondensatoren und Widerstände an den MOSFETs?
 </p>
 
-<div id="org52a8c1d" class="figure">
+<div id="orgb87cd14" class="figure">
 <p><img src="./assets/MOSFET_Operation.png" alt="MOSFET_Operation.png" />
 </p>
 <p><span class="figure-number">Figure 9: </span>Sie lassen nur kurz das MOSFET leiten.</p>
@@ -490,8 +490,8 @@ In dem Video wird die Schaltung erklärt, man setzt einfach die Enable-Leitung k
 </ol>
 </div>
 
-<div id="outline-container-org899e6c7" class="outline-4">
-<h4 id="org899e6c7"><span class="section-number-4">1.2.6.</span> C9</h4>
+<div id="outline-container-org3ffb800" class="outline-4">
+<h4 id="org3ffb800"><span class="section-number-4">1.2.6.</span> C9</h4>
 <div class="outline-text-4" id="text-1-2-6">
 <p>
 Wofür ist C9?
@@ -500,8 +500,8 @@ Einfach nur zum Filtern?
 </div>
 </div>
 
-<div id="outline-container-org6eaa590" class="outline-4">
-<h4 id="org6eaa590"><span class="section-number-4">1.2.7.</span> 2. Spannungsregler</h4>
+<div id="outline-container-org0598b4d" class="outline-4">
+<h4 id="org0598b4d"><span class="section-number-4">1.2.7.</span> 2. Spannungsregler</h4>
 <div class="outline-text-4" id="text-1-2-7">
 <p>
 <img src="./assets/Spannungsregler2.png" alt="Spannungsregler2.png" />
@@ -529,8 +529,8 @@ Alternativen:
 </div>
 </div>
 
-<div id="outline-container-org5b0fb93" class="outline-3">
-<h3 id="org5b0fb93"><span class="section-number-3">1.3.</span> Debug-Messungen</h3>
+<div id="outline-container-org7bbbeb0" class="outline-3">
+<h3 id="org7bbbeb0"><span class="section-number-3">1.3.</span> Debug-Messungen</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Nach dem originalen Schaltplan existieren drei mögliche Eingänge, die über die analogen Pins des Arduinos gemessen werden können.
@@ -550,11 +550,11 @@ Eventuell kann ich das also entfernen.</li>
 </div>
 </div>
 
-<div id="outline-container-org51e8a8c" class="outline-3">
-<h3 id="org51e8a8c"><span class="section-number-3">1.4.</span> Taster</h3>
+<div id="outline-container-org9424821" class="outline-3">
+<h3 id="org9424821"><span class="section-number-3">1.4.</span> Taster</h3>
 <div class="outline-text-3" id="text-1-4">
 
-<div id="org859e9ce" class="figure">
+<div id="org8859c68" class="figure">
 <p><img src="./assets/Taster.png" alt="Taster.png" />
 </p>
 <p><span class="figure-number">Figure 10: </span>Taster</p>
@@ -570,7 +570,7 @@ Ich habe "normale" Taster, die laut KiCAD offenbar sowas wie PHAP33 Series sind.
 </p>
 
 
-<div id="org4f0efc9" class="figure">
+<div id="orgb9c1e03" class="figure">
 <p><img src="./assets/Taster.jpg" alt="Taster.jpg" />
 </p>
 <p><span class="figure-number">Figure 11: </span>Meine Taster</p>
@@ -578,12 +578,12 @@ Ich habe "normale" Taster, die laut KiCAD offenbar sowas wie PHAP33 Series sind.
 </div>
 </div>
 
-<div id="outline-container-org0f9f73d" class="outline-3">
-<h3 id="org0f9f73d"><span class="section-number-3">1.5.</span> Messung der Geschwindigkeit</h3>
+<div id="outline-container-orgca2a997" class="outline-3">
+<h3 id="orgca2a997"><span class="section-number-3">1.5.</span> Messung der Geschwindigkeit</h3>
 <div class="outline-text-3" id="text-1-5">
 </div>
-<div id="outline-container-org402396b" class="outline-4">
-<h4 id="org402396b"><span class="section-number-4">1.5.1.</span> Erwartete Frequenzen</h4>
+<div id="outline-container-org06b6f17" class="outline-4">
+<h4 id="org06b6f17"><span class="section-number-4">1.5.1.</span> Erwartete Frequenzen</h4>
 <div class="outline-text-4" id="text-1-5-1">
 <p>
 Der Dynamo hat 13 Klauen und sollte also je Rotation 13 volle Wellen ausgeben.
@@ -603,15 +603,15 @@ Tatsächlich kann ich evtl. sogar nur mit den digitalen Eingängen und Interrupt
 </div>
 </div>
 
-<div id="outline-container-org2e24ad2" class="outline-4">
-<h4 id="org2e24ad2"><span class="section-number-4">1.5.2.</span> Methoden</h4>
+<div id="outline-container-org7f7e86f" class="outline-4">
+<h4 id="org7f7e86f"><span class="section-number-4">1.5.2.</span> Methoden</h4>
 <div class="outline-text-4" id="text-1-5-2">
 <p>
 Die nachfolgenden Methoden sind vom Ersteller des Originalmodells beschrieben.
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org9347371"></a>Digitale Inputs<br />
+<li><a id="org2494f53"></a>Digitale Inputs<br />
 <div class="outline-text-5" id="text-1-5-2-1">
 <p>
 Bei dem Erfinder brachte der Dynamo seine erwartete Spannung bereits weit unter \(10\frac{\mathrm{km}}{\mathrm h}\), wodurch er einfach die Spannung mit Widerständen und Begrenzungsdioden an die digitalen Eingänge des Mikrocontrollers angeschlossen hat.
@@ -619,7 +619,7 @@ Das wäre meiner Meinung die einfachste Lösung.
 </p>
 
 
-<div id="org7b1077a" class="figure">
+<div id="orgfdeb859" class="figure">
 <p><img src="./assets/Messung_Digital.png" alt="Messung_Digital.png" />
 </p>
 <p><span class="figure-number">Figure 12: </span>Digitale Inputs</p>
@@ -636,7 +636,7 @@ Die hohen Widerstände (\(470\mathrm k\Omega\)) brauche ich aber trotzdem, um de
 </div>
 </li>
 
-<li><a id="org25c8d3b"></a>ADC-Messung<br />
+<li><a id="org5d532c7"></a>ADC-Messung<br />
 <div class="outline-text-5" id="text-1-5-2-2">
 <p>
 Man könnte die Spannung, die an den digitalen Inputs anliegt genauso gut (evtl. über einen anderen Eingang) analog messen, wobei das evtl. mehr Rechenleistung braucht?
@@ -651,7 +651,7 @@ Eventuell könnte ich die o.g. digitalen Eingänge auf analog schalten (oder ent
 </div>
 </li>
 
-<li><a id="orgf472185"></a>Vergleicher<br />
+<li><a id="org13c43ee"></a>Vergleicher<br />
 <div class="outline-text-5" id="text-1-5-2-3">
 <p>
 Eine Möglichkeit wäre, mit einem Operationsverstärker das Signal des Dynamos in ein Logiksignal umzuwandeln.
@@ -660,7 +660,7 @@ Der braucht allerdings von extern Strom.
 </div>
 </li>
 
-<li><a id="orga74ef72"></a>Fazit<br />
+<li><a id="org505ba3e"></a>Fazit<br />
 <div class="outline-text-5" id="text-1-5-2-4">
 <p>
 Ich finde die erste Variante eigentlich am Besten, da sie nicht großartig weitere Komponenten benötigt.
@@ -668,7 +668,7 @@ Ich finde die erste Variante eigentlich am Besten, da sie nicht großartig weite
 </div>
 </li>
 
-<li><a id="org0d5b5c0"></a><i>Alternative</i> (Funktioniert nicht)<br />
+<li><a id="orge59fa25"></a><i>Alternative</i> (Funktioniert nicht)<br />
 <div class="outline-text-5" id="text-1-5-2-5">
 <p>
 Eventuell könnte man auch direkt nach dem Gleichrichter messen und so weitere Komponenten sparen?
@@ -685,8 +685,8 @@ Dann habe ich aber den Spannungsabfall…
 </ol>
 </div>
 
-<div id="outline-container-org5e3221d" class="outline-4">
-<h4 id="org5e3221d"><span class="section-number-4">1.5.3.</span> Vorgehen</h4>
+<div id="outline-container-org0487067" class="outline-4">
+<h4 id="org0487067"><span class="section-number-4">1.5.3.</span> Vorgehen</h4>
 <div class="outline-text-4" id="text-1-5-3">
 <p>
 z.B. <a href="https://www.instructables.com/Arduino-Frequency-Detection/">https://www.instructables.com/Arduino-Frequency-Detection/</a>
@@ -695,8 +695,8 @@ z.B. <a href="https://www.instructables.com/Arduino-Frequency-Detection/">https:
 </div>
 </div>
 
-<div id="outline-container-org628c537" class="outline-3">
-<h3 id="org628c537"><span class="section-number-3">1.6.</span> Display</h3>
+<div id="outline-container-org18e7b1d" class="outline-3">
+<h3 id="org18e7b1d"><span class="section-number-3">1.6.</span> Display</h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
 In dem ursprünglichen Projekt wird ein <i>DOGM081-A</i> verwendet, welches bis zu 8 Zeichen anzeigen kann.
@@ -708,11 +708,11 @@ Allgemein sollte ein LCD-Display verwendet werden, sodass die Hintergrundbeleuch
 </p>
 </div>
 
-<div id="outline-container-org5b70e2e" class="outline-4">
-<h4 id="org5b70e2e"><span class="section-number-4">1.6.1.</span> <span class="done DONE">DONE</span> Nokia 3310/5110 Display</h4>
+<div id="outline-container-org1304cd5" class="outline-4">
+<h4 id="org1304cd5"><span class="section-number-4">1.6.1.</span> <span class="done DONE">DONE</span> Nokia 3310/5110 Display</h4>
 <div class="outline-text-4" id="text-1-6-1">
 
-<div id="org755ec67" class="figure">
+<div id="org478e033" class="figure">
 <p><img src="https://cdn-learn.adafruit.com/assets/assets/000/003/089/original/lcds___displays_backlitfruit.jpg?1396781171" alt="lcds___displays_backlitfruit.jpg?1396781171" />
 </p>
 <p><span class="figure-number">Figure 13: </span>Adafruit Nokia Display</p>
@@ -729,8 +729,8 @@ Leider gibt es kaum noch Verkäufer…
 </div>
 </div>
 
-<div id="outline-container-org0402779" class="outline-4">
-<h4 id="org0402779"><span class="section-number-4">1.6.2.</span> <span class="done DONE">DONE</span> DisplayVisions DOGM240-6</h4>
+<div id="outline-container-orgae6468f" class="outline-4">
+<h4 id="orgae6468f"><span class="section-number-4">1.6.2.</span> <span class="done DONE">DONE</span> DisplayVisions DOGM240-6</h4>
 <div class="outline-text-4" id="text-1-6-2">
 <p>
 Alternativ wollte ich dieses Display verwenden.
@@ -746,11 +746,11 @@ Verfügbar wären das DOGM128W-6 und DOGM132W-5.
 </div>
 </div>
 
-<div id="outline-container-org9eb6f5f" class="outline-4">
-<h4 id="org9eb6f5f"><span class="section-number-4">1.6.3.</span> <span class="todo TODO">TODO</span> DisplayVisions DOGM128W-6</h4>
+<div id="outline-container-org3487c32" class="outline-4">
+<h4 id="org3487c32"><span class="section-number-4">1.6.3.</span> <span class="todo TODO">TODO</span> DisplayVisions DOGM128W-6</h4>
 <div class="outline-text-4" id="text-1-6-3">
 
-<div id="org28a0fd1" class="figure">
+<div id="orgd9d0790" class="figure">
 <p><img src="./assets/Display.png" alt="Display.png" />
 </p>
 <p><span class="figure-number">Figure 14: </span>DOGM128W-6 Display</p>
@@ -785,8 +785,8 @@ Display kostet 20€, Beleuchtung ab 7€ (ohne MwSt).
 </div>
 </div>
 
-<div id="outline-container-org829b135" class="outline-3">
-<h3 id="org829b135"><span class="section-number-3">1.7.</span> Controller</h3>
+<div id="outline-container-orgd88a6de" class="outline-3">
+<h3 id="orgd88a6de"><span class="section-number-3">1.7.</span> Controller</h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
 Da ich keinen Controller wie im originalen Projekt löten möchte, will ich einen Arduino Nano 33 BLE Sense sockeln.
@@ -818,7 +818,7 @@ Im Datasheet klingt es so:
 </p>
 
 
-<div id="org8a7374b" class="figure">
+<div id="orgdf8f067" class="figure">
 <p><img src="./assets/3V3Jumper.png" alt="3V3Jumper.png" />
 </p>
 </div>
@@ -829,8 +829,8 @@ Das Board hat auch einen Gesten-Sensor, der mir vielleicht Knöpfe erspart, durc
 </p>
 </div>
 
-<div id="outline-container-org2731156" class="outline-4">
-<h4 id="org2731156"><span class="section-number-4">1.7.1.</span> Programmierung</h4>
+<div id="outline-container-org6270a48" class="outline-4">
+<h4 id="org6270a48"><span class="section-number-4">1.7.1.</span> Programmierung</h4>
 <div class="outline-text-4" id="text-1-7-1">
 <p>
 Grundlegend könnte ich den Arduino über USB programmieren.
@@ -842,12 +842,12 @@ Da aber für geringeren Stromverbrauch die \(5\mathrm V\)-Versorgung des Arduino
 </div>
 
 
-<div id="outline-container-orge29ae79" class="outline-3">
-<h3 id="orge29ae79"><span class="section-number-3">1.8.</span> Testpunkte und Pins</h3>
+<div id="outline-container-org1a8ff40" class="outline-3">
+<h3 id="org1a8ff40"><span class="section-number-3">1.8.</span> Testpunkte und Pins</h3>
 <div class="outline-text-3" id="text-1-8">
 </div>
-<div id="outline-container-org5517a3c" class="outline-4">
-<h4 id="org5517a3c"><span class="section-number-4">1.8.1.</span> 3.3V</h4>
+<div id="outline-container-org5779a21" class="outline-4">
+<h4 id="org5779a21"><span class="section-number-4">1.8.1.</span> 3.3V</h4>
 <div class="outline-text-4" id="text-1-8-1">
 <p>
 Da bei durchgeschnittenem \(5\mathrm V\)-Pin der Arduino nicht mehr über USB mit Strom versorgt werden kann und das Flashen über die ICSP-Schnittstelle offenbar relativ fummelig ist (keine Pins), sollte ich die \(3.3\mathrm V\)-Schiene auch von außen versorgbar machen, bspw. über einen Raspberry Pi.
@@ -857,8 +857,8 @@ Sollte die Spannungsversorgung vollkommen ausfallen, kann ich so weiterhin mit d
 </div>
 </div>
 
-<div id="outline-container-org5119227" class="outline-4">
-<h4 id="org5119227"><span class="section-number-4">1.8.2.</span> 5V</h4>
+<div id="outline-container-org036eb03" class="outline-4">
+<h4 id="org036eb03"><span class="section-number-4">1.8.2.</span> 5V</h4>
 <div class="outline-text-4" id="text-1-8-2">
 <p>
 Alternativ könnte ich direkt via USB \(5\mathrm V\) in den zweiten Spannungsregler einführen und so alles angenehm mit \(3.3\mathrm V\) bestromen ohne ein Netzteil zu brauchen.
@@ -866,8 +866,8 @@ Alternativ könnte ich direkt via USB \(5\mathrm V\) in den zweiten Spannungsreg
 </div>
 </div>
 
-<div id="outline-container-orgb84a6df" class="outline-4">
-<h4 id="orgb84a6df"><span class="section-number-4">1.8.3.</span> GND</h4>
+<div id="outline-container-orged7bbab" class="outline-4">
+<h4 id="orged7bbab"><span class="section-number-4">1.8.3.</span> GND</h4>
 <div class="outline-text-4" id="text-1-8-3">
 <p>
 Gerne als Pin freilegen, dass der Pi besser bestromen kann und man mit einem Oszi o.ä. besser messen kann.
@@ -875,8 +875,8 @@ Gerne als Pin freilegen, dass der Pi besser bestromen kann und man mit einem Osz
 </div>
 </div>
 
-<div id="outline-container-orga79f1d6" class="outline-4">
-<h4 id="orga79f1d6"><span class="section-number-4">1.8.4.</span> Eingangsspannung</h4>
+<div id="outline-container-org1067f7f" class="outline-4">
+<h4 id="org1067f7f"><span class="section-number-4">1.8.4.</span> Eingangsspannung</h4>
 <div class="outline-text-4" id="text-1-8-4">
 <p>
 Die brauche ich wahrscheinlich nicht über Testpunkte freigeben, da ich auch am Kabel messen kann.
@@ -884,8 +884,8 @@ Die brauche ich wahrscheinlich nicht über Testpunkte freigeben, da ich auch am 
 </div>
 </div>
 
-<div id="outline-container-org95bf9c7" class="outline-4">
-<h4 id="org95bf9c7"><span class="section-number-4">1.8.5.</span> Spannung des Kondensators</h4>
+<div id="outline-container-orgf16ad51" class="outline-4">
+<h4 id="orgf16ad51"><span class="section-number-4">1.8.5.</span> Spannung des Kondensators</h4>
 <div class="outline-text-4" id="text-1-8-5">
 <p>
 Zum Debuggen eventuell hilfreich, Testpunkt sollte reichen.
@@ -893,8 +893,8 @@ Zum Debuggen eventuell hilfreich, Testpunkt sollte reichen.
 </div>
 </div>
 
-<div id="outline-container-org44355a2" class="outline-4">
-<h4 id="org44355a2"><span class="section-number-4">1.8.6.</span> Spannung nach Gleichrichter</h4>
+<div id="outline-container-org297d012" class="outline-4">
+<h4 id="org297d012"><span class="section-number-4">1.8.6.</span> Spannung nach Gleichrichter</h4>
 <div class="outline-text-4" id="text-1-8-6">
 <p>
 Wahrscheinlich zum Debuggen hilfreich, auch hier reicht ein Testpunkt.
@@ -904,8 +904,8 @@ Letztendlich will ich das in den Arduino geben…
 </div>
 </div>
 
-<div id="outline-container-orge265638" class="outline-3">
-<h3 id="orge265638"><span class="section-number-3">1.9.</span> Gehäuse</h3>
+<div id="outline-container-org8318f0d" class="outline-3">
+<h3 id="org8318f0d"><span class="section-number-3">1.9.</span> Gehäuse</h3>
 <div class="outline-text-3" id="text-1-9">
 <p>
 Bspw. <a href="https://www.conrad.de/de/p/camdenboss-7200-203c-universal-gehaeuse-polycarbonat-grau-transparent-1-st-2694407.html">https://www.conrad.de/de/p/camdenboss-7200-203c-universal-gehaeuse-polycarbonat-grau-transparent-1-st-2694407.html</a>
@@ -924,16 +924,16 @@ Vielleicht sollte ich etwas Silica-Gel o.ä. mit rein legen, dass alles schön t
 </div>
 
 
-<div id="outline-container-orgdd23417" class="outline-3">
-<h3 id="orgdd23417"><span class="section-number-3">1.10.</span> Platine</h3>
+<div id="outline-container-org713c0d5" class="outline-3">
+<h3 id="org713c0d5"><span class="section-number-3">1.10.</span> Platine</h3>
 <div class="outline-text-3" id="text-1-10">
 <p>
 Die Platine sollte natürlich in das Gehäuse passen und die korrekten Bohrungen für die Löcher des Gehäuses haben.
 </p>
 </div>
 
-<div id="outline-container-org731da48" class="outline-4">
-<h4 id="org731da48"><span class="section-number-4">1.10.1.</span> Design</h4>
+<div id="outline-container-orgfc44180" class="outline-4">
+<h4 id="orgfc44180"><span class="section-number-4">1.10.1.</span> Design</h4>
 <div class="outline-text-4" id="text-1-10-1">
 <p>
 <a href="https://old.reddit.com/r/PrintedCircuitBoard/wiki/schematic_review_tips">https://old.reddit.com/r/PrintedCircuitBoard/wiki/schematic_review_tips</a>
@@ -947,7 +947,7 @@ Notfalls müsste ich 4 Ebenen nehmen…
 </div>
 
 <ol class="org-ol">
-<li><a id="orgd59c6d7"></a>Löcher<br />
+<li><a id="orgbe966af"></a>Löcher<br />
 <div class="outline-text-5" id="text-1-10-1-1">
 <p>
 Die müssen eigentlich nicht mit Metall sein (NPTH), aber schaden tut es nicht.
@@ -957,12 +957,12 @@ Die müssen eigentlich nicht mit Metall sein (NPTH), aber schaden tut es nicht.
 </ol>
 </div>
 
-<div id="outline-container-org7647905" class="outline-4">
-<h4 id="org7647905"><span class="section-number-4">1.10.2.</span> Hersteller</h4>
+<div id="outline-container-org30881dd" class="outline-4">
+<h4 id="org30881dd"><span class="section-number-4">1.10.2.</span> Hersteller</h4>
 <div class="outline-text-4" id="text-1-10-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgd37b5d0"></a>Finish<br />
+<li><a id="orgd9b3a65"></a>Finish<br />
 <div class="outline-text-5" id="text-1-10-2-1">
 <p>
 Wahrscheinlich ist hier ENIG besser, da es weniger oxidiert?
@@ -970,7 +970,7 @@ Wahrscheinlich ist hier ENIG besser, da es weniger oxidiert?
 </div>
 </li>
 
-<li><a id="org2d9cb89"></a>Vergleich<br />
+<li><a id="org47123e3"></a>Vergleich<br />
 <div class="outline-text-5" id="text-1-10-2-2">
 <p>
 Siehe auch <a href="https://lcamtuf.substack.com/p/comparing-hobby-pcb-vendors">hier</a>.
@@ -1109,7 +1109,7 @@ Bestückung ist wahrscheinlich eh zu teuer, also sollte ich für selbst-löten d
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Kay Kaprolat</p>
-<p class="date">Created: 2024-06-29 Sat 16:14</p>
+<p class="date">Created: 2024-06-29 Sat 16:52</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
